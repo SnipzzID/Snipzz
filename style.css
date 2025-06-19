@@ -67,12 +67,11 @@ section {
     transform: rotate(-3deg) scale(1.05);
 }
 
-/* Warna pastel unik tiap varian */
-.mix-fruits { background: #AEDFF7; } /* biru pastel */
-.mix-veggie { background: #D0F0C0; } /* hijau pastel */
-.sweet-potato { background: #E5C4F0; } /* ungu pastel */
-.banana { background: #FFF7AE; } /* kuning pastel */
-.mango { background: #FFD59E; } /* orange pastel */
+.mix-fruits { background: #AEDFF7; }
+.mix-veggie { background: #D0F0C0; }
+.sweet-potato { background: #E5C4F0; }
+.banana { background: #FFF7AE; }
+.mango { background: #FFD59E; }
 
 .produk-item img {
     width: 100%;
