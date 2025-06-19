@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, #FF6F61, #FFC107);
+    background: linear-gradient(45deg, #FF8A65, #FFD54F);
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -25,15 +25,16 @@ h1 {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: #00BCD4;
+    background: #64B5F6;
     color: white;
     border-radius: 30px;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .btn-primary:hover {
-    background: #0097A7;
+    background: #42A5F5;
+    transform: scale(1.05);
 }
 
 section {
@@ -55,7 +56,6 @@ section {
 }
 
 .produk-item {
-    background: #FFE082;
     border-radius: 20px;
     padding: 20px;
     width: 200px;
@@ -64,8 +64,15 @@ section {
 }
 
 .produk-item:hover {
-    transform: scale(1.05);
+    transform: rotate(-3deg) scale(1.05);
 }
+
+/* Warna pastel unik tiap varian */
+.mix-fruits { background: #AEDFF7; } /* biru pastel */
+.mix-veggie { background: #D0F0C0; } /* hijau pastel */
+.sweet-potato { background: #E5C4F0; } /* ungu pastel */
+.banana { background: #FFF7AE; } /* kuning pastel */
+.mango { background: #FFD59E; } /* orange pastel */
 
 .produk-item img {
     width: 100%;
@@ -83,26 +90,27 @@ form input, form textarea {
     max-width: 400px;
     margin: 10px 0;
     padding: 12px;
-    border: 2px solid #FF6F61;
+    border: 2px solid #FF8A65;
     border-radius: 8px;
 }
 
 form button {
     padding: 12px 30px;
-    background: #FF6F61;
+    background: #FF8A65;
     color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 form button:hover {
     background: #E64A19;
+    transform: scale(1.05);
 }
 
 footer {
-    background: #FF6F61;
+    background: #FF8A65;
     color: white;
     text-align: center;
     padding: 20px;
