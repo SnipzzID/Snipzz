@@ -55,15 +55,15 @@
 
     <section id="kontak">
         <h2>Kontak Kami</h2>
-        <form>
-            <input type="text" placeholder="Nama Kamu" required>
-            <input type="email" placeholder="Email Kamu" required>
-            <textarea placeholder="Pesan Kamu"></textarea>
-            <button type="submit">Kirim Pesan</button>
+        <form onsubmit="sendWA(); return false;">
+            <input type="text" id="nama" placeholder="Nama Kamu" required>
+            <input type="email" id="email" placeholder="Email Kamu" required>
+            <textarea id="pesan" placeholder="Pesan Kamu" required></textarea>
+            <button type="submit">Kirim via WhatsApp</button>
         </form>
     </section>
 
-    <a href="https://wa.me/6285285673568" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
 
@@ -73,13 +73,29 @@
             <a href="https://shopee.co.id/snipzz" target="_blank">
                 <img src="images/shopee-icon.png" alt="Shopee" class="social-icon">
             </a>
-            <a href="https://instagram.com/snipzz.id" target="_blank">
+            <a href="https://instagram.com/snipzz.official" target="_blank">
                 <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
             </a>
-            <a href="https://tiktok.com/@snipzz.id" target="_blank">
+            <a href="https://tiktok.com/@snipzz" target="_blank">
                 <img src="images/tiktok-icon.png" alt="TikTok" class="social-icon">
             </a>
         </div>
     </footer>
+
+    <script>
+    function sendWA() {
+        var nama = document.getElementById("nama").value;
+        var email = document.getElementById("email").value;
+        var pesan = document.getElementById("pesan").value;
+        var noWA = "6281234567890"; 
+
+        var text = "Halo SNIPZZ!%0ASaya: " + encodeURIComponent(nama) +
+                   "%0AEmail: " + encodeURIComponent(email) +
+                   "%0APesan: " + encodeURIComponent(pesan);
+
+        var url = "https://wa.me/" + noWA + "?text=" + text;
+        window.open(url, '_blank');
+    }
+    </script>
 </body>
 </html>
