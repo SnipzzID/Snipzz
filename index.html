@@ -58,6 +58,7 @@
         <form onsubmit="sendWA(); return false;">
             <input type="text" id="nama" placeholder="Nama Kamu" required>
             <input type="email" id="email" placeholder="Email Kamu" required>
+            <textarea id="alamat" placeholder="Alamat Lengkap Kamu" required></textarea>
             <textarea id="pesan" placeholder="Pesan Kamu" required></textarea>
             <button type="submit">Kirim via WhatsApp</button>
         </form>
@@ -86,12 +87,14 @@
     function sendWA() {
         var nama = document.getElementById("nama").value;
         var email = document.getElementById("email").value;
+        var alamat = document.getElementById("alamat").value;
         var pesan = document.getElementById("pesan").value;
         var noWA = "6285285673568"; 
 
         var text = "Halo SNIPZZ!%0ASaya: " + encodeURIComponent(nama) +
-                   "%0AEmail: " + encodeURIComponent(email) +
-                   "%0APesan: " + encodeURIComponent(pesan);
+                   "%0AEmail: " + encodeURIComponent(email) + "%0A" +
+                   "Alamat: " + encodeURIComponent(alamat) + "%0A" +
+                   "Pesan: " + encodeURIComponent(pesan);
 
         var url = "https://wa.me/" + noWA + "?text=" + text;
         window.open(url, '_blank');
