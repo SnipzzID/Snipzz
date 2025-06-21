@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -23,10 +22,10 @@ body {
   padding: 30px;
 }
 .produk-item {
-  background: #fff;
-  border: 1px solid #eaeaea;
-  padding: 15px;
+  background: linear-gradient(180deg, #fff, #fff8fc);
+  border: 2px solid #ffe3f1;
   border-radius: 16px;
+  padding: 15px;
   width: 160px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -35,18 +34,17 @@ body {
 }
 .produk-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
 }
-.produk-item img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+.produk-item h3 {
+  color: #ff69b4;
+  font-weight: 600;
 }
 #overlay {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -56,6 +54,7 @@ body {
   z-index: 1000;
 }
 #overlay.show {
+  display: flex;
   opacity: 1;
   pointer-events: auto;
 }
@@ -69,10 +68,6 @@ body {
   animation: pop-in 0.4s ease;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
-#overlay-content h2 {
-  margin-top: 0;
-  color: #ff69b4;
-}
 #overlay-content img {
   max-width: 100%;
   margin: 15px 0;
@@ -85,38 +80,14 @@ button {
   border-radius: 10px;
   font-size: 14px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 button:hover {
   background: #ff4da6;
 }
-
 @keyframes pop-in {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
-
-
-/* Playful Accent Styles */
-.produk-item {
-  background: linear-gradient(180deg, #fff, #fff8fc);
-  border: 2px solid #ffe3f1;
-}
-.produk-item h3 {
-  color: #ff69b4;
-  font-weight: 600;
-  margin-top: 8px;
-}
-.produk-item:hover {
-  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
-}
-
 .kontak {
   background: #fff8fc;
   padding: 40px 20px;
@@ -136,15 +107,7 @@ button:hover {
   font-size: 14px;
 }
 .kontak button {
-  background: #ff69b4;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.kontak button:hover {
-  background: #ff4da6;
+  margin-top: 10px;
 }
 .kontak .sosmed a {
   display: inline-block;
@@ -156,3 +119,11 @@ button:hover {
 .kontak .sosmed a:hover {
   text-decoration: underline;
 }
+.kontak .sosmed a::before {
+  display: inline-block;
+  margin-right: 6px;
+}
+.kontak .sosmed a[href*="wa.me"]::before { content: "📱"; }
+.kontak .sosmed a[href*="instagram"]::before { content: "📸"; }
+.kontak .sosmed a[href*="shopee"]::before { content: "🛒"; }
+.kontak .sosmed a[href*="tiktok"]::before { content: "🎵"; }
