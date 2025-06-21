@@ -127,3 +127,9 @@ button:hover {
 .kontak .sosmed a[href*="instagram"]::before { content: "📸"; }
 .kontak .sosmed a[href*="shopee"]::before { content: "🛒"; }
 .kontak .sosmed a[href*="tiktok"]::before { content: "🎵"; }
+
+.produk-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
