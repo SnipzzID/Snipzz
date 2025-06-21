@@ -1,104 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNIPZZ Mix Fruits Chips</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SNIPZZ - Interactive</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="images/logo-snipzz.png" alt="Logo SNIPZZ" class="logo">
-        <h1>Welcome to SNIPZZ!</h1>
-        <p>Colorful. Playful. Tasty.</p>
-        <a href="#produk" class="btn-primary">Lihat Produk</a>
-    </header>
+  <header class="hero">
+    <img src="images/logo-snipzz.png" alt="Logo SNIPZZ" class="logo" />
+    <h1>Camilan Sehat, Seru & Playful!</h1>
+    <p>Rasakan keseruan ngemil buah dan sayur berkualitas dalam setiap gigitan.</p>
+  </header>
 
-    <section id="tentang">
-        <h2>Apa itu SNIPZZ?</h2>
-        <p>SNIPZZ adalah snack buah chips mix yang crunchy, sehat, dan super fun! Cocok buat ngemil kapan saja tanpa rasa bersalah.</p>
-        <img src="images/logo-noBG.png"Produk SNIPZZ">
-    </section>
+  <section id="produk">
+    <h2>Varian Produk Kami</h2>
+    <div class="produk-list">
+      <div class="produk-item" data-title="Mix Fruits" data-desc="Ceria dan segar dari apel, pisang, nanas & stroberi." data-img="images/mix-fruits-pouch.png">
+        <img src="images/mix-fruits-pouch.png" alt="Mix Fruits" /><h3>Mix Fruits</h3>
+      </div>
+      <div class="produk-item" data-title="Mix Veggie" data-desc="Sayuran sehat: wortel, buncis & lebih banyak lagi!" data-img="images/mix-veggie-pouch.png">
+        <img src="images/mix-veggie-pouch.png" alt="Mix Veggie" /><h3>Mix Veggie</h3>
+      </div>
+      <div class="produk-item" data-title="Sweet Potato" data-desc="Ubi ungu manis yang crunchy alami!" data-img="images/sweet-potato-pouch.png">
+        <img src="images/sweet-potato-pouch.png" alt="Sweet Potato" /><h3>Sweet Potato</h3>
+      </div>
+      <div class="produk-item" data-title="Banana" data-desc="Pisang manis alami, renyah disukai semua usia." data-img="images/banana-pouch.png">
+        <img src="images/banana-pouch.png" alt="Banana" /><h3>Banana</h3>
+      </div>
+      <div class="produk-item" data-title="Mango" data-desc="Mangga harum manis, bikin nagih!" data-img="images/mango-pouch.png">
+        <img src="images/mango-pouch.png" alt="Mango" /><h3>Mango</h3>
+      </div>
+    </div>
+  </section>
 
-    <section id="produk">
-        <h2>Varian Favorit Kami:</h2>
-        <div class="produk-list">
-            <div class="produk-item mix-fruits">
-                <img src="images/mix-fruits-pouch.png" alt="Mix Fruits">
-                <h3>Mix Fruits</h3>
-                <p>Perpaduan apel, pisang, nanas & stroberi. Ceria & segar!</p>
-            </div>
-            <div class="produk-item mix-veggie">
-                <img src="images/mix-veggie-pouch.png" alt="Mix Veggie">
-                <h3>Mix Veggie</h3>
-                <p>Camilan sayuran sehat: wortel, buncis, dan lainnya!</p>
-            </div>
-            <div class="produk-item sweet-potato">
-                <img src="images/sweet-potato-pouch.png" alt="Sweet Potato">
-                <h3>Sweet Potato</h3>
-                <p>Ubi ungu manis dan crunchy, alami banget!</p>
-            </div>
-            <div class="produk-item banana">
-                <img src="images/banana-pouch.png" alt="Banana">
-                <h3>Banana</h3>
-                <p>Pisang renyah rasa manis alami, favorit semua usia.</p>
-            </div>
-            <div class="produk-item mango">
-                <img src="images/mango-pouch.png" alt="Mango">
-                <h3>Mango</h3>
-                <p>Mangga harum manis, bikin nagih dari gigitan pertama!</p>
-            </div>
-        </div>
-    </section>
+  <div id="overlay">
+    <div id="overlay-content"></div>
+    <button onclick="closeOverlay()">Tutup</button>
+  </div>
 
-    <section id="kontak">
-        <h2>Kontak Kami</h2>
-        <form onsubmit="sendWA(); return false;">
-            <input type="text" id="nama" placeholder="Nama Kamu" required>
-            <input type="email" id="email" placeholder="Email Kamu" required>
-            <textarea id="alamat" placeholder="Alamat Lengkap Kamu" required></textarea>
-            <textarea id="pesan" placeholder="Pesan Kamu" required></textarea>
-            <button type="submit">Kirim via WhatsApp</button>
-        </form>
-    </section>
-
-    <a href="https://wa.me/6285285673568" class="whatsapp-float" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
-
-    <footer>
-        <p>&copy; 2025 SNIPZZ. Snack Buah Ceria untuk Semua!</p>
-        <div class="social-links">
-            <a href="https://shopee.co.id/snipzz" target="_blank">
-                <img src="images/shopee-icon.png" alt="Shopee" class="social-icon">
-            </a>
-            <a href="https://instagram.com/snipzz.id" target="_blank">
-                <img src="images/instagram-icon.png" alt="Instagram" class="social-icon">
-            </a>
-            <a href="https://tiktok.com/@snipzz.id" target="_blank">
-                <img src="images/tiktok-icon.png" alt="TikTok" class="social-icon">
-            </a>
-        </div>
-    </footer>
-
-    <script>
-    function sendWA() {
-        var nama = document.getElementById("nama").value;
-        var email = document.getElementById("email").value;
-        var alamat = document.getElementById("alamat").value;
-        var pesan = document.getElementById("pesan").value;
-        var noWA = "6285285673568"; 
-
-        var text = "Halo SNIPZZ!%0ASaya: " + encodeURIComponent(nama) +
-                   "%0AEmail: " + encodeURIComponent(email) + "%0A" +
-                   "Alamat: " + encodeURIComponent(alamat) + "%0A" +
-                   "Pesan: " + encodeURIComponent(pesan);
-
-        var url = "https://wa.me/" + noWA + "?text=" + text;
-        window.open(url, '_blank');
-    }
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
