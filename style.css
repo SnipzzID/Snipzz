@@ -116,3 +116,43 @@ button:hover {
 .produk-item:hover {
   box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
 }
+
+.kontak {
+  background: #fff8fc;
+  padding: 40px 20px;
+  text-align: center;
+}
+.kontak form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+.kontak input, .kontak textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.kontak button {
+  background: #ff69b4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.kontak button:hover {
+  background: #ff4da6;
+}
+.kontak .sosmed a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+.kontak .sosmed a:hover {
+  text-decoration: underline;
+}
