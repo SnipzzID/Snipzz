@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snipzz.github.io/sitemap.xml
