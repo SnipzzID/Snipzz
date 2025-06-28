@@ -133,3 +133,54 @@ button:hover {
   height: auto;
   margin-bottom: 10px;
 }
+
+/* Bagian Tentang SNIPZZ */
+#tentang {
+  background: #fff0f6;
+  padding: 40px 20px;
+  text-align: center;
+}
+#tentang h2 {
+  color: #ff69b4;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+#tentang p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Bagian Testimoni */
+#testimoni {
+  background: #ffe6f0;
+  padding: 40px 20px;
+}
+#testimoni h2 {
+  color: #ff69b4;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.testimonials {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.testimonial {
+  background: white;
+  border-left: 4px solid #ff69b4;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.testimonial p {
+  margin: 0 0 8px;
+  font-style: italic;
+}
+.testimonial strong {
+  color: #666;
+  font-size: 14px;
+}
